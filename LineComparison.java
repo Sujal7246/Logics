@@ -22,10 +22,13 @@ public class LineComparison {
         System.out.println(" length of the line is: "+l1);
         double l2=Math.sqrt((dx1*dx1)+(dy1*dy1));
         System.out.println(" length of the line2 is: "+l2);
-        if(l1>l2){
+        Double length1=l1;
+        Double length2=l2;
+        int result=length1.compareTo(length2);
+        if(result>0){
             System.out.println("length1  is greater than length2 ");
-        }else if(l1==l2){
-            System.out.println("Both are equals");
+        }else if(result==0){
+            System.out.println("Both lines are equals");
         }else{
             System.out.println("length2 is greater than length1 ");
         }
